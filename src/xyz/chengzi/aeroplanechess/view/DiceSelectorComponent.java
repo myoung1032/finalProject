@@ -50,7 +50,6 @@ public class DiceSelectorComponent extends JComponent implements ItemListener {
         return diceComboBox.getSelectedItem();
     }
 
-
     @Override
     public void itemStateChanged(ItemEvent e) {
         if (randomDiceRadio.isSelected()) {
