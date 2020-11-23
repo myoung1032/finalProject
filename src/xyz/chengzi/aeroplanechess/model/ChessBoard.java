@@ -10,10 +10,6 @@ public class ChessBoard implements Listenable<ChessBoardListener> {
     private final List<ChessBoardListener> listenerList = new ArrayList<>();
     private final Square[][] grid;
     private final int dimension, endDimension;
-    innerClass in = new innerClass();
-    class innerClass{
-
-    }
 
     public ChessBoard(int dimension, int endDimension) {
         this.grid = new Square[4][dimension + endDimension];

@@ -50,10 +50,10 @@ public class GameController implements InputListener, Listenable<GameStateListen
     }
 
     public int rollDice() {
-        if (rolledNumber == null) {
+        if (rolledNumber == null) {//说明还没投过，第一次投
             return rolledNumber = RandomUtil.nextInt(1, 6);
         } else {
-            return -1;
+            return -1;//说明已经投过了，不能重新投
         }
     }
 
